@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Dia do Missionário — Informações do Alfajor</title>
+    <style>
+        /* CONFIGURAÇÃO DA TELA CHEIA */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #fcfaf7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px 15px 60px 15px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        /* ESTILO DO LETREIRO EM MOVIMENTO */
+        .area-letreiro {
+            width: 100%;
+            overflow: hidden;
+            background-color: #fdf8f2;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #800020;
+        }
+
+        .texto-movel {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: letreiro-corrido 18s linear infinite;
+            color: #800020;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        @keyframes letreiro-corrido {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        /* ÁREA DO TOPO: Garante centralização e espaçamento perfeitos */
+        .topo-perfil {
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-top: 25px; /* Afasta os títulos para não ficarem muito em cima */
+            margin-bottom: 20px;
+        }
+
+        /* CORREÇÃO DA FOTO: QUADRADA, NITIDA E NO CANTO ESQUERDO */
+        .foto-perfil-topo {
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    width: 200px; /* Alterado de 110px para 140px para ficar mais larga */
+    height: 210px; 
+    border-radius: 8px; 
+    border: 3px solid #800020; 
+    object-fit: contain; /* Mantive como 'cover' para a foto preencher bem o espaço sem distorcer */
+    z-index: 10;
+        }
+
+        /* CORREÇÃO: TÍTULOS AMPLIADOS E EM PERFEITA SINTONIA CENTRAL */
+        .titulo-pt {
+            color: #800020;
+            font-size: 36px; /* Aumentado para dar o destaque que você pediu */
+            font-weight: bold;
+            margin: 0 auto 8px auto;
+            line-height: 1.2;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+        .titulo-en {
+            color: #800020;
+            font-size: 28px; /* Aumentado para acompanhar o português */
+            font-weight: normal;
+            margin: 0 auto 20px auto;
+            line-height: 1.2;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        /* SUBTÍTULOS EM PERFEITA SINTONIA COM OS TÍTULOS */
+        .subtitulo-pt {
+            font-style: italic;
+            color: #DAA520; /* Dourado Gold */
+            margin: 15px auto 5px auto;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+        
+        .subtitulo-en {
+            font-style: italic;
+            color: #DAA520; /* Dourado Gold */
+            margin: 0 auto 25px auto;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        .mensagem {
+            font-size: 15px;
+            color: #444;
+            text-align: justify;
+            margin: 0 10px 35px 10px;
+            background-color: #fdf8f2;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #b8860b;
+        }
+
+        .secao-ingredientes {
+            text-align: left;
+            border-top: 2px dashed #ddd;
+            padding: 25px 10px 0 10px;
+            margin-bottom: 30px;
+        }
+        .secao-ingredientes h2 {
+            color: #800020;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .ingrediente-item {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .alerta-alergia {
+            background-color: #fff5f5;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffcccc;
+            margin-top: 25px;
+        }
+        .alerta-alergia h3 {
+            color: #cc0000;
+            margin-top: 0;
+            font-size: 15px;
+        }
+        .alerta-alergia p {
+            margin: 0;
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* ESTILO DO VÍDEO NO FINAL */
+        .video-player {
+            width: 95%;
+            max-width: 550px;
+            border-radius: 12px;
+            border: 4px solid #800020; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="area-letreiro">
+            <div class="texto-movel">
+                ✨ Bem-vindo ao Dia do Missionário! Welcome to Missionary Day! • Congregação Itaperuçu — Paraná, Brasil! ✨ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✨ Bem-vindo ao Dia do Missionário! Welcome to Missionary Day! • Congregação Itaperuçu — Paraná, Brasil! ✨
+            </div>
+        </div>
+
+        <div class="topo-perfil">
+            <img src="fotoum.png.jpeg" alt="Foto de Boas-Vindas" class="foto-perfil-topo">
+            
+            <h1 class="titulo-pt">Bem-vindo ao Dia do Missionário</h1>
+            <h2 class="titulo-en">Welcome to Missionary Day</h2>
+        </div>
+
+        <hr style="width: 85%; border: 0; border-top: 1px solid #800020; margin-bottom: 15px;">
+
+        <p class="subtitulo-pt">Congregação Itaperuçu — Paraná, Brasil</p>
+        <p class="subtitulo-en">Itaperuçu Congregation — Paraná, Brazil</p>
+
+        <div class="mensagem">
+            Queridos irmãos e irmãs, é uma alegria imensa poder receber cada um de vocês neste dia tão especial! Que este período de convivência e aprendizado seja ricamente abençoado pelo nosso amoroso Pai, Jeová e fortaleça ainda mais o nosso amor e união fraternal.
+            <p style="color:#800020; margin-top: 10px; margin-bottom: 15px;"><strong>Filipenses 2:2 "Se há, pois, algum encorajamento em Cristo, algum consolo de amor, algum companheirismo espiritual, algum terno sentimento e compaixão, Tornem plena a minha alegria por terem o mesmo modo de pensar e o mesmo amor, sendo plenamente unidos, tendo o mesmo pensamento".</strong></p> 
+            <p>Preparamos esta lembrancinha doce com muito carinho para adoçar o seu dia. Sejam muito bem-vindos!</p>
+            
+            <hr style="width: 30%; border: 0; border-top: 1px solid #b8860b; margin-top: 15px; margin-bottom: 15px;">
+
+            <p>Dear brothers and sisters, it is a great joy to welcome each of you on this very special day! May this time of fellowship and learning be richly blessed by our loving Father, Jehovah, and may it further strengthen our love and brotherly unity.</p>
+            <p style="color:#800020; margin-top: 10px; margin-bottom: 15px;"><strong>Philippians 2:2 "If, then, there is any encouragement in Christ, any comfort of love, any spiritual fellowship, any tender affection and compassion, make my joy complete by having the same mindset and the same love, being fully united and of one mind."</strong></p>
+            <p>We have prepared this sweet treat with great care to brighten your day. A very warm welcome to you all!</p>
+        </div>
+
+        <div class="secao-ingredientes">
+            <h2>📋 Composição do Alfajor / Alfajor Composition</h2>
+            
+            <div class="ingrediente-item"><strong>Massa:</strong> Biscoito doce tipo Maria/Maizena (farinha de trigo enriquecida com ferro e ácido fólico, açúcar, gordura vegetal, amido de milho, soro de leite, sal).</div>
+            <div class="ingrediente-item"><strong>Recheio:</strong> Doce de soro de leite composto (soro de leite, açúcar, glicose e amido modificado).</div>
+            <div class="ingrediente-item"><strong>Cobertura:</strong> Cobertura fracionada sabor chocolate blend.</div>
+            <div class="ingrediente-item"><strong>Decoração:</strong> Granulado sabor chocolate e confeitos coloridos.</div>
+            
+            <hr style="border: 0; border-top: 1px dashed #ddd; margin-top: 15px; margin-bottom: 15px;">
+
+            <div class="ingrediente-item"><strong>Dough:</strong> Sweet biscuit (Maria/Maizena style) (wheat flour enriched with iron and folic acid, sugar, vegetable fat, corn starch, whey, salt).</div>
+            <div class="ingrediente-item"><strong>Filling:</strong> Compound whey-based confection (whey, sugar, glucose, and modified starch).</div>
+            <div class="ingrediente-style ingrediente-item"><strong>Coating:</strong> Blend-flavor chocolate-style compound coating.</div>
+            <div class="ingrediente-item"><strong>Decoration:</strong> Chocolate-flavored sprinkles and colored sprinkles.</div>
+            
+            <div class="alerta-alergia">
+                <h3>⚠️ ATENÇÃO ALÉRGICOS / ALLERGY INFORMATION:</h3>
+                <p>CONTÉM GLÚTEN. CONTÉM LACTOSE.</p>
+                <p>CONTAINS GLUTEN. CONTAINS LACTOSE.</p>
+                
+                <p style="margin-top: 5px;">CONTÉM DERIVADOS DE LEITE, TRIGO E SOJA.</p>
+                <p>CONTAINS MILK, WHEAT, AND SOY DERIVATIVES.</p>
+                
+                <p style="font-weight: normal; font-style: italic; margin-top: 8px; color: #777;">Pode conter traços de amendoim. / May contain traces of peanuts.</p>
+            </div>
+        </div>
+        
+        <p>
+            <video class="video-player" controls>
+                <source src="video-missionario.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução de vídeos.
+            </video>
+        </p>
+        
+    </div>
+</body>
+</html>
